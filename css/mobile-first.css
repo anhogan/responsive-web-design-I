@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Home Page Styling */
+
+/* Mobile View */
+
+nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 90%;
+  margin: 5%;
+}
+
+footer {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+h1 {
+  font-size: 70px;
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Gupter', serif;
+}
+
+button {
+  width: 60%;
+  font-size: 16px;
+  margin-left: 18%;
+  vertical-align: bottom;
+}
+
+hr {
+  width: 90%;
+}
+
+nav a {
+  text-decoration: none;
+  color: lightslategray;
+  vertical-align: middle;
+  padding: 3%;
+  border: .5px solid black;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 350px;
+  margin: 0;
+  padding: 3% 0 0 0;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 100%;
+  justify-content: center;
+  padding: 1% 35% 5% 35%;
+}
+
+.mainTitle {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  justify-content: center;
+}
+
+.main-img {
+  display: none;
+}
+
+.top-content {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.twoBlocks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.columnFlex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.middle-img {
+  width: 90%;
+  margin: 2% 5% 2% 5%;
+}
+
+.bottom-content {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.threeBlocks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0% 1% 1% 1%;
+  padding: 1%;
+}
+
+.contact p {
+  padding-top: 2%;
+}
+
+.copyright {
+  width: 100%;
+  margin: 0% 42.5% 5% 42.5%;
+}
+
+/* Tablet View - 500px and above */
+
+@media (min-width: 500px) {
+  .navbar {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    height: 150px;
+    flex-direction: column-reverse;
+  }
+
+  .nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .nav-list a {
+    border: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .mainTitle {
+    justify-content: center;
+  }
+  .mainTitle .columnFlex {
+    width: 100%;
+  }
+
+  .columnFlex {
+    padding-right: 2%;
+    margin: 1%;
+    padding: 1%;
+  }
+
+  .twoBlocks {
+    flex-direction: row;
+  }
+
+  .threeBlocks {
+    flex-direction: row;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact p {
+    padding-top: 2%;
+  }
+}
+
+/* Desktop View - 800px and above */
+
+@media (min-width: 800px) {
+  nav {
+    width: 90%;
+    margin: 1% 5% 0% 5%;
+  }
+
+  .navbar {
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    height: 90px;
+    flex-direction: row;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .nav-list a {
+    padding: 3%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 20%;
+    padding: 1%;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  button {
+    width: 60%;
+    font-size: 24px;
+    margin-left: 18%;
+  }
+
+  .main-img {
+    display: inline;
+  }
+
+  .twoBlocks {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .threeBlocks {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .columnFlex {
+    margin: 0;
+  }
+
+  .middle-img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
